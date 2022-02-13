@@ -1,17 +1,23 @@
 <template>
     <section class="home">
-        <div class="home__header">
+        <aside class="home__sidebar">
+            <Sidebar />
+        </aside>
+
+        <header class="home__header">
             <Header />
-        </div>
+        </header>
         
     </section>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
+import Header from '../components/Header.vue';
+import Sidebar from '../components/Sidebar.vue';
 	export default {
 		components: {
 			Header,
+            Sidebar,
 		},
 	}
 </script>
@@ -21,6 +27,10 @@ import Header from '../components/Header.vue'
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: var(--gap-big)
+    }
+
+    .home__sidebar {
+        grid-column: 1/ span 2;
     }
 
     .home__header {
