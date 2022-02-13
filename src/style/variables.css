@@ -20,17 +20,17 @@
 	--bottom-big: 100px;
 
 	--top-medium: 40px;
-	--bottom-medium: var(--bottom-medium);
+	--bottom-medium: var(--top-medium);
 
 	--top-small: 20px;
-	--bottom-small: var(--bottom-small);
-	--left-small: var(--bottom-small);
-	--right-small: var(--bottom-small);
+	--bottom-small: var(--top-small);
+	--left-small: var(--top-small);
+	--right-small: var(--top-small);
 
 	--top-xsmall: 10px;
-	--bottom-xsmall: var(--bottom-xsmall);
-	--left-xsmall: var(--bottom-xsmall);
-	--right-xsmall: var(--bottom-xsmall);
+	--bottom-xsmall: var(--top-xsmall);
+	--left-xsmall: var(--top-xsmall);
+	--right-xsmall: var(--top-xsmall);
 
 	/* grid */
 	--gap-big: 20px;
