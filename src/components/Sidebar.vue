@@ -2,7 +2,7 @@
     <aside class="sidebar">
        <ul>
             <li>
-                <a href="">
+                <a href="" class="sidebar__logo">
                     <img src="/images/svg/logo.svg" alt="">
                 </a>
 
@@ -70,6 +70,18 @@
         height: 100vh;
     }
 
+    .sidebar__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: var(--bottom-small);
+        padding: var(--top-small);
+    }
+
+    .sidebar__logo > img {
+        width: 80px;
+    }
+
     .sidebar__links > img {
         width: 30px;
     }
@@ -78,7 +90,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: var(--bottom-big);
+        margin-bottom: var(--bottom-medium);
         color: var(--white);
         text-decoration: none;
 
